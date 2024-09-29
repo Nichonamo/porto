@@ -1,0 +1,183 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url('images/galaxy.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    background-color: rgba(51, 51, 51, 0.7);
+    color: #fff;
+    padding: 20px; 
+    text-align: center; 
+}
+
+.header-content {
+    margin-bottom: 20px; 
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.profile-img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fffffd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ef0000;
+}
+
+/* Content Area */
+.content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Section (content) */
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+}
+
+/* About Section */
+#about {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 50px; 
+    backdrop-filter: blur(15px); 
+    padding: 30px; 
+    color: #fff; 
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(25% - 20px); 
+    color: #fff;
+    transition: transform 0.3s ease; /* Add transition for the grow effect */
+}
+
+.skill:hover {
+    transform: scale(1.05); /* Grow effect */
+}
+
+.skill img {
+    width: 50px; 
+    height: auto;
+}
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    transition: transform 0.3s ease; /* Add transition for the grow effect */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Grow effect */
+}
+
+/* Hobbies Section */
+.hobbies-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hobby {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(25% - 20px); 
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease; /* Add transition for the grow effect */
+}
+
+.hobby:hover {
+    transform: scale(1.05); /* Grow effect */
+}
+
+/* Footer */
+footer {
+    background-color: rgba(51, 51, 51, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
