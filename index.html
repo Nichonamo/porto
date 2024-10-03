@@ -15,21 +15,22 @@
             <h1>Nicholas Kent</h1>
             <p>Software Engineering Student</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <div class="content">
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! I'm Nicholas Kent, a passionate software engineering student experienced in creating private servers , Software enginering , and Web development.</p>
+            <p>Hello! I'm Nicholas Kent, a passionate software engineering student experienced in creating private servers, Software Engineering, and Web development.</p>
         </section>
 
         <section id="skills">
@@ -45,7 +46,7 @@
                 </div>
                 <div class="skill">
                     <img src="images/javascript.png" alt="Javascript">
-                    <p>JavaScript</p>
+                    <p>Javascript</p>
                 </div>
                 <div class="skill">
                     <img src="images/react.png" alt="React-JS">
@@ -78,12 +79,19 @@
         <section id="contact">
             <h2>Contact</h2>
             <p>You can reach me via:</p>
-            <ul>
-                <li>Email: nicholaskentx@gmail.com</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/nicholas-kent-840273330/">Nicholas Kent</a></li>
-                <li>Instagram <a href="https://www.instagram.com/nicholaskent_/">nicholaskent_</a></li>
-            </ul>
+            <div class="contact-container">
+                <div class="contact-box" onclick="window.location='mailto:nicholaskentx@gmail.com';">
+                    <img src="images/gmail.png" alt="Email" class="contact-icon">
+                </div>
+                <div class="contact-box" onclick="window.open('https://www.linkedin.com/in/nicholas-kent-840273330/', '_blank');">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon">
+                </div>
+                <div class="contact-box" onclick="window.open('https://www.instagram.com/nicholaskent_/', '_blank');">
+                    <img src="images/instagram.png" alt="Instagram" class="contact-icon">
+                </div>
+            </div>
         </section>
+        
     </div>
 
     <footer>
