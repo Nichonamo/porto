@@ -68,12 +68,13 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: nowrap;
     width: 100%; 
+    overflow-x: auto; 
 }
 
 nav ul li {
-    margin: 0 5px; 
+    margin: 0 5px;
 }
 
 nav ul li a {
@@ -81,19 +82,19 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px; 
+    white-space: nowrap; 
 }
 
+/* Media Query for Mobile Devices */
 @media (max-width: 600px) {
     nav ul {
-        flex-direction: column; 
-        align-items: center; 
+        justify-content: space-around; 
     }
 
     nav ul li {
-        margin: 5px 0; 
+        margin: 0 2px; 
     }
 }
-
 
 nav ul li a:hover {
     color: #5d00ff;
