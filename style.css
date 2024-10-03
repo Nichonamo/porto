@@ -14,21 +14,21 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background: url('images/galaxy.gif') no-repeat center center fixed;
+    background: url('images/outerspace.gif') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
 }
 
 /* Header */
 header {
-    background-color: rgba(51, 51, 51, 0.7);
+    backdrop-filter: blur(5px); 
     color: #fff;
     padding: 20px; 
     text-align: center; 
 }
 
 .header-content {
-    margin-bottom: 20px; 
+    margin-bottom: 2px; 
 }
 
 .header-content h1 {
@@ -42,15 +42,25 @@ header {
 }
 
 .profile-img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
+    width: 120px;
+    height: 50%;
+    border-radius: 150%;
 }
 
 /* Navigation */
 nav {
-    background-color: rgba(255, 255, 255, 0.7);
+    position: sticky;
+
+    backdrop-filter: blur(5px); 
+    border: 2px solid #ffffff;
+    top: 0;
     padding: 10px;
+    z-index: 1000; 
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%; 
 }
 
 nav ul {
@@ -58,7 +68,8 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    width: 100%; 
 }
 
 nav ul li {
@@ -69,16 +80,18 @@ nav ul li a {
     color: #fffffd;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
 }
 
 nav ul li a:hover {
-    color: #ef0000;
+    color: #5d00ff;
 }
+
 
 /* Content Area */
 .content {
     padding: 20px;
-    flex-grow: 1;
+    flex-grow: 1
 }
 
 /* Section (content) */
@@ -89,12 +102,12 @@ section {
 
 /* About Section */
 #about {
-    position: relative;
-    background: rgba(255, 255, 255, 0.2); 
+    position: relative; 
     border-radius: 50px; 
     backdrop-filter: blur(15px); 
     padding: 30px; 
-    color: #fff; 
+    color: #fff;
+    border: 2px solid #ffffff;
 }
 
 /* Skills Section */
@@ -106,22 +119,22 @@ section {
 }
 
 .skill {
-    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     flex: 1 1 calc(25% - 20px); 
     color: #fff;
-    transition: transform 0.3s ease; /* Add transition for the grow effect */
+    transition: transform 0.3s ease;
+    border: 2px solid #ffffff;
 }
 
 .skill:hover {
-    transform: scale(1.05); /* Grow effect */
+    transform: scale(1.05); 
 }
 
 .skill img {
-    width: 50px; 
+    width: 75px; 
     height: auto;
 }
 
@@ -133,16 +146,16 @@ section {
 }
 
 .project {
-    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid #ffffff;
     backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 10px;
     color: #fff;
-    transition: transform 0.3s ease; /* Add transition for the grow effect */
+    transition: transform 0.3s ease;
 }
 
 .project:hover {
-    transform: scale(1.05); /* Grow effect */
+    transform: scale(1.05); 
 }
 
 /* Hobbies Section */
@@ -154,23 +167,63 @@ section {
 }
 
 .hobby {
-    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid #ffffff;
     backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 10px;
     flex: 1 1 calc(25% - 20px); 
     text-align: center;
     color: #fff;
-    transition: transform 0.3s ease; /* Add transition for the grow effect */
+    transition: transform 0.3s ease; 
 }
 
 .hobby:hover {
-    transform: scale(1.05); /* Grow effect */
+    transform: scale(1.05); 
+}
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    justify-content: left; 
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.contact-box {
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+    cursor: pointer; 
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px; 
+    object-fit: cover; 
+}
+
+.contact-box:hover {
+    transform: scale(1.60); 
+}
+
+a {
+    color: #2200ff; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+a:hover {
+    color: #ef0000; 
+}
+a:active {
+    color: #4400ff; 
 }
 
 /* Footer */
 footer {
-    background-color: rgba(51, 51, 51, 0.7);
+    border: 2px solid #ffffff;
     color: #fff;
     text-align: center;
     padding: 20px 0;
