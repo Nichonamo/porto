@@ -3,10 +3,8 @@ const navLinks = document.querySelectorAll("nav a");
 
 navLinks.forEach(link => {
     link.addEventListener("click", function () {
-        // Get the id of the section
         const sectionId = this.getAttribute("href").substring(1);
-
-        // Dynamically change the background image for each section
+        
         switch (sectionId) {
             case 'about':
                 document.body.style.backgroundImage = 'url("images/about-bg.jpg")';
