@@ -17,8 +17,8 @@ header {
 }
 
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
 }
 
@@ -40,16 +40,23 @@ nav ul li a {
 }
 
 .content {
+  display: flex-box;
+  flex-wrap: wrap;
   padding: 20px;
+  color: #fff;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
 }
 
 section {
   margin-bottom: 40px;
   padding: 20px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 0 50px rgba(255, 0, 0, 0.5), 0 0 50px rgba(0, 0, 255, 0.5);
 }
 
 .skills-container, .hobbies-container, .projects-container, .contact-container {
@@ -66,23 +73,21 @@ footer {
   margin: 20px 0;
   color: #fff;
 }
-#background-video-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
-
-#background-video {
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-}
 
 .App {
+  position: relative;
+  z-index: 1;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: transparent;
+  transition: background 0.5s ease-in-out;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.content {
   position: relative;
   z-index: 1;
 }

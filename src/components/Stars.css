@@ -1,0 +1,45 @@
+.star-field {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none; /* Prevent interaction */
+    z-index: -1; /* Send to back */
+    background-color: black; /* Set the background color to black */
+  }
+  
+  .star {
+    position: absolute;
+    bottom: -10px; /* Start below the visible area */
+    width: 3px; /* Increased width for visibility */
+    height: 3px; /* Increased height for visibility */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: twinkle 1s infinite alternate, moveUp linear forwards; /* Add moveUp animation */
+  }
+  
+  @keyframes twinkle {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+    100% {
+      opacity: 0.8;
+    }
+  }
+  
+  @keyframes moveUp {
+    0% {
+      transform: translateY(0); /* Start at the bottom */
+    }
+    100% {
+      transform: translateY(-100vh); /* Move up to the top of the viewport */
+    }
+  }
+  
