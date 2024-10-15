@@ -11,32 +11,66 @@ body {
   transition: background 0.5s ease-in-out;
 }
 
-header {
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #fff;
+}
+
+.header-content h1, .header-content p {
+  margin: 0;
   text-align: center;
-  margin: 20px;
+  padding: 5px;
 }
 
 .profile-img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
+/* Navbar container */
+nav {
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  backdrop-filter: blur(20px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  z-index: 1000;
+  border: 2px solid rgb(211, 192, 192); 
+  border-radius: 10px; 
+}
+
+/* List styling inside navbar */
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  margin: 20px 0;
+  margin: 0;
+  padding: 10px 0; 
 }
 
+/* Links styling */
 nav ul li {
-  margin: 0 15px;
+  margin: 0 12px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff00d9; 
+}
+
+body {
+  padding-top: 60px; 
 }
 
 .content {
@@ -59,7 +93,7 @@ section {
   border-radius: 10px;
 }
 
-.skills-container, .hobbies-container, .projects-container, .contact-container {
+.hobbies-container, .skills-container, .projects-container, .contact-container {
   display: flex;
   gap: 20px;
 }
@@ -73,7 +107,7 @@ footer {
   margin: 20px 0;
   color: #fff;
 }
-
+  
 .App {
   position: relative;
   z-index: 1;
